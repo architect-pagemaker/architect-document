@@ -1,0 +1,29 @@
+{
+  "name": "architect-document",
+  "version": "1.0.0",
+  "description": "document of the architect",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/architect-pagemaker/architect-document.git"
+  },
+  "keywords": [
+    "architect",
+    "visualization",
+    "document"
+  ],
+  "author": "Tianzhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/architect-pagemaker/architect-document/issues"
+  },
+  "homepage": "https://github.com/architect-pagemaker/architect-document#readme",
+  "dependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
