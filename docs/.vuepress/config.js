@@ -5,7 +5,8 @@ module.exports = {
   title: 'Hello Architect',
   description: 'architect——自由构建你的H5网页',
 
-  dest: 'dist',
+  base: '/architect-document/public',
+  dest: 'public',
 
   markdown: {
     lineNumbers: false
