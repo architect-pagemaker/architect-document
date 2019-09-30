@@ -1,0 +1,21 @@
+FROM nginx
+MAINTAINER Tianzhen <mecoepcoo@vip.qq.com>
+
+ENV TIME_ZONE Asia/Shanghai
+ENV RUN_USER nginx
+ENV RUN_GROUP nginx
+ENV DATA_DIR /w
+
+RUN cp /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime \
+  && rm -rf /etc/nginx/conf.d/*
+
+ADD ./temp    /w/architect-document/public
+ADD ./deploy/nginx/default.conf    /w/nginx/default.conf
+
+RUN ln -sf /w/nginx/default.conf /etc/nginx/conf.d/default.conf
+
+WORKDIR /w
+
+EXPOSE 80
+
+ENTRYPOINT nginx -g "daemon off;"

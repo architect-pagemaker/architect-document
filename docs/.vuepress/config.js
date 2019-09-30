@@ -5,7 +5,7 @@ module.exports = {
   title: 'Hello Architect',
   description: 'architect——自由构建你的H5网页',
 
-  base: '/architect-document/public',
+  base: '/architect-document/public/',
   dest: 'public',
 
   markdown: {
@@ -13,6 +13,13 @@ module.exports = {
   },
 
   evergreen: true,
+
+  themeConfig: {
+    // 侧边栏
+    sidebar: [
+
+    ]
+  },
 
   configureWebpack: {
     resolve: {
